@@ -1,0 +1,12 @@
+# Credentials
+credentials.json
+client_secrets.json
+credentials_service.json
+youtube212121-0de9fad1d662.json
+
+# Useless
+Hasil Survei JAIS.xlsx
+__pycache__/
+
+# ENV
+.env
