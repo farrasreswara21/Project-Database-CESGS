@@ -11,7 +11,7 @@ from pydrive2.auth import GoogleAuth
 
 load_dotenv()
 
-base64_encoded_service_account = st.secrets["BASE64_ENCODED_SERVICE_ACCOUNT"]
+base64_encoded_service_account = st.secrets.BASE64_ENCODED_SERVICE_ACCOUNT
 # Step 1: Decode the Base64-encoded string
 decoded_service_account = base64.b64decode(base64_encoded_service_account).decode('utf-8')
 # Step 2: Parse the decoded string as JSON
