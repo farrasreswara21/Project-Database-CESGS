@@ -41,7 +41,10 @@ def login_with_service_account():
     gauth.ServiceAuth()
     return gauth
 
-drive = GoogleDrive(login_with_service_account())
+gauth = GoogleAuth()
+gauth.LocalWebserverAuth()
+
+drive = GoogleDrive(gauth)
 
 def get_file_id_by_title(file_title):
     try:
